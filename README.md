@@ -1,0 +1,1 @@
+# seftservice_kiosk
