@@ -1,9 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:self_order_kiosk_project/extras/utils/SizeConfig.dart';
+import 'package:selfservice_kiosk/extras/utils/SizeConfig.dart';
 
-Widget customBtnRounded(colorPrimaryBgShade, double width, double height,
-    btnHistory, colorPrimaryText) {
+Widget customBtnRounded(
+  colorPrimaryBgShade,
+  double width,
+  double height,
+  btnHistory,
+  colorPrimaryText,
+  btnFontSize,
+) {
   return TextButton(
     onPressed: () {},
     style: TextButton.styleFrom(
@@ -19,14 +25,20 @@ Widget customBtnRounded(colorPrimaryBgShade, double width, double height,
       btnHistory,
       style: TextStyle(
         color: colorPrimaryText,
-        fontSize: SizeConfig.screenWidth * 0.035,
+        fontSize: btnFontSize,
       ),
     ),
   );
 }
 
 Widget customBtnSquare(
-    btnColor, double width, double height, btnText, btnTextColor) {
+  btnColor,
+  double width,
+  double height,
+  btnText,
+  btnTextColor,
+  btnFontSize,
+) {
   return TextButton(
     onPressed: () {},
     style: TextButton.styleFrom(
@@ -40,7 +52,7 @@ Widget customBtnSquare(
       btnText,
       style: TextStyle(
         color: btnTextColor,
-        fontSize: SizeConfig.screenWidth * 0.025,
+        fontSize: btnFontSize,
       ),
     ),
   );

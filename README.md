@@ -1,6 +1,6 @@
-# self_order_kiosk_project
+# selfservice_kiosk
 
-Self Order Kiosk Project
+A new Flutter project.
 
 ## Getting Started
 
