@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:selfservice_kiosk/extras/utils/SizeConfig.dart';
 
 Widget customBtnRounded(
   colorPrimaryBgShade,
