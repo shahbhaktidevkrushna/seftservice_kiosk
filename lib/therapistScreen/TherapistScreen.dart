@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:selfservice_kiosk/extras/commonWidgets/CardAppointment.dart';
-import 'package:selfservice_kiosk/extras/constant/AppColor.dart';
-import 'package:selfservice_kiosk/extras/constant/StringConstant.dart';
 import 'package:selfservice_kiosk/extras/utils/SizeConfig.dart';
 
 class TherapistScreen extends StatefulWidget {
@@ -14,28 +12,32 @@ class _TherapistScreenState extends State<TherapistScreen> {
   Widget _portraitMode() {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: [
-            Card(
-              child: Row(
-                children: [
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                ],
+        body: Column(children: [
+          Card(
+            child: GridView.count(
+              crossAxisCount: 6,
+              shrinkWrap: true,
+              children: List.generate(
+                9,
+                (index) {
+                  return cardAppointmentWidget();
+                },
               ),
             ),
-            Card(
-              child: Row(
-                children: [
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                ],
+          ),
+          Card(
+            child: GridView.count(
+              crossAxisCount: 6,
+              shrinkWrap: true,
+              children: List.generate(
+                9,
+                (index) {
+                  return cardAppointmentWidget();
+                },
               ),
             ),
-          ],
-        ),
+          ),
+        ]),
       ),
     );
   }
@@ -43,28 +45,42 @@ class _TherapistScreenState extends State<TherapistScreen> {
   Widget _landscapeMode() {
     return MaterialApp(
       home: Scaffold(
-        body: Column(
-          children: [
-            Card(
-              child: Row(
-                children: [
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                ],
+        body: Column(children: [
+          Container(
+            margin: EdgeInsets.all(
+              SizeConfig.screenHeight * 0.05,
+            ),
+            child: Card(
+              child: GridView.count(
+                crossAxisCount: 6,
+                shrinkWrap: true,
+                children: List.generate(
+                  9,
+                  (index) {
+                    return cardAppointmentWidget();
+                  },
+                ),
               ),
             ),
-            Card(
-              child: Row(
-                children: [
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                  cardAppointmentWidget(),
-                ],
+          ),
+          Container(
+            margin: EdgeInsets.all(
+              SizeConfig.screenHeight * 0.05,
+            ),
+            child: Card(
+              child: GridView.count(
+                crossAxisCount: 6,
+                shrinkWrap: true,
+                children: List.generate(
+                  9,
+                  (index) {
+                    return cardAppointmentWidget();
+                  },
+                ),
               ),
             ),
-          ],
-        ),
+          ),
+        ]),
       ),
     );
   }
