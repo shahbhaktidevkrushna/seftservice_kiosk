@@ -12,36 +12,60 @@ class TherapistScreen extends StatefulWidget {
 
 class _TherapistScreenState extends State<TherapistScreen> {
   Widget _portraitMode() {
-    return cardAppointmentWidget(
-      SizeConfig.screenWidth * 0.05,
-      SizeConfig.screenWidth * 0.2,
-      SizeConfig.screenWidth * 0.2,
-      nameTest,
-      scheduleTest,
-      moneyTest,
-      hoursTest,
-      colorBlack,
-      colorPrimary,
-      colorPrimary,
-      colorBorderGrey,
-      SizeConfig.screenWidth * 0.015,
+    return MaterialApp(
+      home: Scaffold(
+        body: Column(
+          children: [
+            Card(
+              child: Row(
+                children: [
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                ],
+              ),
+            ),
+            Card(
+              child: Row(
+                children: [
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
   Widget _landscapeMode() {
-    return cardAppointmentWidget(
-      SizeConfig.screenWidth * 0.05,
-      SizeConfig.screenWidth * 0.2,
-      SizeConfig.screenWidth * 0.2,
-      nameTest,
-      scheduleTest,
-      moneyTest,
-      hoursTest,
-      colorBlack,
-      colorPrimary,
-      colorPrimary,
-      colorBorderGrey,
-      SizeConfig.screenWidth * 0.015,
+    return MaterialApp(
+      home: Scaffold(
+        body: Column(
+          children: [
+            Card(
+              child: Row(
+                children: [
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                ],
+              ),
+            ),
+            Card(
+              child: Row(
+                children: [
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                  cardAppointmentWidget(),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
