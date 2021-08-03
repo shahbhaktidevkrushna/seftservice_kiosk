@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:selfservice_kiosk/loginScreen/loginScreen.dart';
 import 'package:selfservice_kiosk/therapistScreen/TherapistScreen.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: TherapistScreen(),
+      home: LoginScreen(),
     );
   }
 }
