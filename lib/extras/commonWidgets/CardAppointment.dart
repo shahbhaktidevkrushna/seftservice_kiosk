@@ -88,7 +88,7 @@ Widget cardAppointmentWidget(colorAvailable) {
               ),
               Container(
                 margin: EdgeInsets.only(
-                  left: SizeConfig.screenHeight * 0.055,
+                  left: SizeConfig.screenHeight * 0.050,
                 ),
                 child: SvgPicture.asset(
                   clockIcon,
