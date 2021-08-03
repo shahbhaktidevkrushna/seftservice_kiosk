@@ -19,7 +19,7 @@ Widget cardAppointmentWidget(colorAvailable) {
           Row(
             children: [
               therapistCont(
-                  SizeConfig.screenHeight * 0.025,
+                  SizeConfig.screenHeight * 0.026,
                   SizeConfig.screenWidth * 0.030,
                   SizeConfig.screenWidth * 0.011),
               Container(
@@ -88,7 +88,7 @@ Widget cardAppointmentWidget(colorAvailable) {
               ),
               Container(
                 margin: EdgeInsets.only(
-                  left: SizeConfig.screenHeight * 0.060,
+                  left: SizeConfig.screenHeight * 0.055,
                 ),
                 child: SvgPicture.asset(
                   clockIcon,
@@ -112,7 +112,7 @@ Widget cardAppointmentWidget(colorAvailable) {
           ),
           customBtnSquare(
             colorPrimary,
-            SizeConfig.screenWidth * 0.13,
+            SizeConfig.screenWidth * 0.12,
             SizeConfig.screenHeight * 0.03,
             btnBookMe,
             colorWhite,
