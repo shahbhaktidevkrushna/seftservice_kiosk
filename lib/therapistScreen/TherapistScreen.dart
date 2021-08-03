@@ -28,7 +28,7 @@ class _TherapistScreenState extends State<TherapistScreen> {
                   padding: EdgeInsets.symmetric(
                       vertical: SizeConfig.screenHeight * 0.01),
                   child: Text(
-                    availableLater,
+                    appbarTitle,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: SizeConfig.screenWidth * 0.02,
