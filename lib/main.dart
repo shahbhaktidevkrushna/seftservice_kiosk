@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:selfservice_kiosk/therapistScreen/TherapistScreen.dart';
 import 'package:flutter/services.dart';
+import 'package:selfservice_kiosk/therapistScreen/TherapistScreen.dart';
 
 void main() {
   SystemChrome.setPreferredOrientations([

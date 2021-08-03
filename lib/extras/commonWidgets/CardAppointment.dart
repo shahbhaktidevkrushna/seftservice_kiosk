@@ -1,12 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:selfservice_kiosk/extras/commonWidgets/CustomContainer.dart';
 import 'package:selfservice_kiosk/extras/constant/AppColor.dart';
 import 'package:selfservice_kiosk/extras/constant/AppImages.dart';
 import 'package:selfservice_kiosk/extras/constant/StringConstant.dart';
 import 'package:selfservice_kiosk/extras/utils/SizeConfig.dart';
+
 import '../../extras/commonWidgets/Buttons.dart';
-import 'package:flutter_svg/svg.dart';
 
 Widget cardAppointmentWidget(colorAvailable) {
   return Container(
