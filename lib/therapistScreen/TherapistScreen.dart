@@ -4,7 +4,6 @@ import 'package:selfservice_kiosk/extras/commonWidgets/CardAppointment.dart';
 import 'package:selfservice_kiosk/extras/constant/AppColor.dart';
 import 'package:selfservice_kiosk/extras/constant/StringConstant.dart';
 import 'package:selfservice_kiosk/extras/utils/SizeConfig.dart';
-import 'package:flutter/services.dart';
 
 class TherapistScreen extends StatefulWidget {
   @override
@@ -14,10 +13,6 @@ class TherapistScreen extends StatefulWidget {
 class _TherapistScreenState extends State<TherapistScreen> {
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeLeft,
-    ]);
-
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
