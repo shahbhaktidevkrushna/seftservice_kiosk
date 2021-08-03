@@ -4,3 +4,5 @@
 const calendarIcon = "assets/icons/calendar.svg";
 const clockIcon = "assets/icons/clock.svg";
 const moneyIcon = "assets/icons/money.svg";
+
+const backgroundImage = "assets/background.png";
