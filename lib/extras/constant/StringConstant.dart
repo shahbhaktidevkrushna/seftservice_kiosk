@@ -13,3 +13,5 @@ const scheduleTest = "Available Now";
 const moneyTest = "\$504";
 const hoursTest = "4 hours";
 const therapistNumber = "1st";
+const availableNow = "Available Now";
+const availableLater = "Available Later";

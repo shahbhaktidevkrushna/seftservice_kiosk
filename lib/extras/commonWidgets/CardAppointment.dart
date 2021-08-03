@@ -8,13 +8,10 @@ import 'package:selfservice_kiosk/extras/utils/SizeConfig.dart';
 import '../../extras/commonWidgets/Buttons.dart';
 import 'package:flutter_svg/svg.dart';
 
-Widget cardAppointmentWidget() {
+Widget cardAppointmentWidget(colorAvailable) {
   return Container(
-    margin: EdgeInsets.all(
-      SizeConfig.screenWidth * 0.05,
-    ),
     height: SizeConfig.screenWidth * 0.2,
-    width: SizeConfig.screenWidth * 0.25,
+    width: SizeConfig.screenWidth * 0.5,
     child: Card(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -22,9 +19,9 @@ Widget cardAppointmentWidget() {
           Row(
             children: [
               therapistCont(
-                  SizeConfig.screenHeight * 0.02,
-                  SizeConfig.screenWidth * 0.045,
-                  SizeConfig.screenWidth * 0.014),
+                  SizeConfig.screenHeight * 0.025,
+                  SizeConfig.screenWidth * 0.030,
+                  SizeConfig.screenWidth * 0.011),
               Container(
                 margin: EdgeInsets.only(
                   left: SizeConfig.screenHeight * 0.010,
@@ -33,8 +30,7 @@ Widget cardAppointmentWidget() {
                   nameTest,
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: SizeConfig.screenWidth * 0.019,
-                    color: colorBlack,
+                    fontSize: SizeConfig.screenWidth * 0.015,
                   ),
                 ),
               ),
@@ -48,7 +44,7 @@ Widget cardAppointmentWidget() {
                 ),
                 child: SvgPicture.asset(
                   calendarIcon,
-                  color: colorPrimary,
+                  color: colorAvailable,
                   width: SizeConfig.screenWidth * 0.015,
                   height: SizeConfig.screenHeight * 0.015,
                 ),
@@ -60,7 +56,7 @@ Widget cardAppointmentWidget() {
                 child: Text(
                   scheduleTest,
                   style: TextStyle(
-                    color: colorPrimary,
+                    color: colorAvailable,
                   ),
                 ),
               ),
@@ -92,7 +88,7 @@ Widget cardAppointmentWidget() {
               ),
               Container(
                 margin: EdgeInsets.only(
-                  left: SizeConfig.screenHeight * 0.05,
+                  left: SizeConfig.screenHeight * 0.060,
                 ),
                 child: SvgPicture.asset(
                   clockIcon,
@@ -116,7 +112,7 @@ Widget cardAppointmentWidget() {
           ),
           customBtnSquare(
             colorPrimary,
-            SizeConfig.screenWidth * 0.20,
+            SizeConfig.screenWidth * 0.13,
             SizeConfig.screenHeight * 0.03,
             btnBookMe,
             colorWhite,
