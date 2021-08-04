@@ -21,3 +21,7 @@ const ipadLogin = "Ipad Login To Your Account";
 const ipadLoginLocation = "Ipad Login To Your Location";
 const btnLogin = "Login";
 const btnLoginLocation = "Shop Login";
+const txtUsername = "Enter Username";
+const txtEnterPassword = "Enter Password";
+const txtSelectLocation = "Select Location";
+const txtEnterPinCode = "Enter Pin Code";
