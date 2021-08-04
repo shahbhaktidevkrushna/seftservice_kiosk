@@ -133,15 +133,30 @@ Widget cardLoginLocation() {
                 txtEnterPinCode,
                 true,
               )),
-          Container(
-            child: customBtnRounded(
-              colorPrimary,
-              SizeConfig.screenHeight * 0.25,
-              SizeConfig.screenHeight * 0.05,
-              btnLogin,
-              colorWhite,
-              SizeConfig.screenHeight * 0.02,
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                child: customBtnRounded(
+                  colorPrimary,
+                  SizeConfig.screenHeight * 0.25,
+                  SizeConfig.screenHeight * 0.05,
+                  btnLogin,
+                  colorWhite,
+                  SizeConfig.screenHeight * 0.02,
+                ),
+              ),
+              Container(
+                child: customBtnRounded(
+                  colorPrimary,
+                  SizeConfig.screenHeight * 0.25,
+                  SizeConfig.screenHeight * 0.05,
+                  btnLogin,
+                  colorWhite,
+                  SizeConfig.screenHeight * 0.02,
+                ),
+              ),
+            ],
           ),
         ],
       ),
