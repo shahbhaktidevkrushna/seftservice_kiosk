@@ -15,3 +15,9 @@ const hoursTest = "4 hours";
 const therapistNumber = "1st";
 const availableNow = "Available Now";
 const availableLater = "Available Later";
+
+//Login page
+const ipadLogin = "Ipad Login To Your Account";
+const ipadLoginLocation = "Ipad Login To Your Location";
+const btnLogin = "Login";
+const btnLoginLocation = "Shop Login";

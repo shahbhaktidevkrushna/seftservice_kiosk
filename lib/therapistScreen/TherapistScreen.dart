@@ -17,14 +17,14 @@ class _TherapistScreenState extends State<TherapistScreen> {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: SingleChildScrollView(
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(bodyBackground),
-                  fit: BoxFit.cover,
-                ),
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(bodyBackground),
+                fit: BoxFit.cover,
               ),
+            ),
+            child: SingleChildScrollView(
               child: Column(
                 children: [
                   Padding(

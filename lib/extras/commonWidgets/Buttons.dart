@@ -2,28 +2,28 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 Widget customBtnRounded(
-  colorPrimaryBgShade,
-  double width,
-  double height,
-  btnHistory,
-  colorPrimaryText,
+  buttonColor,
+  width,
+  height,
+  buttonText,
+  textColor,
   btnFontSize,
 ) {
   return TextButton(
     onPressed: () {},
     style: TextButton.styleFrom(
-        backgroundColor: colorPrimaryBgShade,
+        backgroundColor: buttonColor,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(20),
         ),
         minimumSize: Size(
           width,
           height,
         )),
     child: Text(
-      btnHistory,
+      buttonText,
       style: TextStyle(
-        color: colorPrimaryText,
+        color: textColor,
         fontSize: btnFontSize,
       ),
     ),
